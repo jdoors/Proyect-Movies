@@ -1,11 +1,13 @@
-
+import React from 'react';
 import './App.css';
+import Rutas from './routes/Rutas';
+
 
 function App() {
   return (
-   <div className='text text-3xl font-bold underline'>
-     HOLA
-    </div>
+   <>
+   <Rutas/>
+   </>
   );
 }
 
