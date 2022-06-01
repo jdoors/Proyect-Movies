@@ -1,12 +1,15 @@
 import React from 'react';
 import Rutas from './routes/Rutas';
+import { Provider } from 'react-redux';
+import { store } from './app/store';
+
 
 
 function App() {
   return (
-   <>
-   <Rutas/>
-   </>
+    <Provider store={store}>
+      <Rutas />
+    </Provider>
   );
 }
 
