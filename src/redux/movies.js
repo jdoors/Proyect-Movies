@@ -13,7 +13,7 @@ export const moviesApi = createApi({
     endpoints: (builder) => ({
         fetchMovies: builder.query({
             query: (title) => ({
-                url: `/?s=${title}`,
+                url: `/?s=jaws,headers${title}`,
                 method: 'GET',
                 headers
             })
